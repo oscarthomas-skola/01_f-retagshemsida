@@ -1,1 +1,87 @@
 /* Här skrivs all din CSS */
+:root {
+  --base-color: #64BE91;
+  --rose: #BF6579;
+  --orange: #BF7F65;
+  --dark-green: #314038;
+  --brown: #403531;
+  --off-white: #F6F1EC;
+  --white: #FFFFFF;
+  --grey: #6E6A66;
+  --margin: 2px;
+}
+
+body {
+    background-color: var(--off-white);
+}
+.Landingpage {
+    height: 100vh;
+    margin: 1px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 7fr;
+    grid-template-areas:
+    "hd hd"
+    "content img";
+}
+
+header {
+    grid-area: hd;
+    border: 2px solid black;
+    margin-bottom: 4px;
+    background-color:var(--dark-green);
+}
+
+
+img {
+    grid-area: img;
+    border: 2px solid black;
+    border-color: bisque 1,5;
+}
+h1 {
+    font-weight: 549;
+}
+.content {
+    grid-area: content;
+    border: 2px solid black;
+    border-color: bisque 1,5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+    padding-bottom: 110px;
+    color: var(--dark-green);
+}
+
+
+.boxes {
+    text-align: center;
+    justify-content:space-around; 
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    container-type: inline-size;
+    height: 100%;
+}
+
+.navbox {
+    box-sizing: border-box;
+    flex: 1 1 200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        
+    margin: 1px;
+}
+
+.box {
+    box-sizing: border-box;
+    flex: 1 1 200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    margin-bottom: 60%;
+    margin-top: 40%;
+}
